@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -80px;
+  margin-top: 30px;
 }
 
 #box-container header h1 {
@@ -21,7 +21,7 @@ body {
   padding-left: 15px;
   margin-left: 15px;
   border-left: 1px solid #ddd;
-  color: #999;
+  color: #d3d3d3;
 }
 
 #box-container header button svg {
@@ -37,7 +37,7 @@ body {
   padding: 30px;
   text-align: center;
   border: 1px dashed #ddd;
-  color: #999;
+  color: #d3d3d3;
   margin-top: 50px;
   cursor: pointer;
 }
@@ -56,7 +56,7 @@ body {
 #box-container ul li + li {
   padding-top: 20px;
   margin-top: 20px;
-  border-top: 1px solid #999;
+  border-top: 1px solid #d3d3d3;
 }
 
 #box-container ul li .fileInfo {
@@ -69,10 +69,10 @@ body {
   font-weight: normal;
   font-size: 14px;
   margin-left: 10px;
-  color: #999;
+  color: #d3d3d3;
 }
 
 #box-container ul li span {
-  color: #999;
+  color: #d3d3d3;
   font-size: 13px;
 }
