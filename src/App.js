@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* Toda informação que for manipulada pelo Component
+ * deve-se salvar no no state
+ */
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+/* Tipos de Componentes!
+ *
+ * Component Statefull - Possui um estado
+ * (isso requer criar um campo state para utilizar o método 'render')
+ * Ex: state = { newBox: "" }; <- isso passará a renderizar o método
+ *
+ * Component Stateless - Não possui estado
+ * (isso permite criar uma função ou váriavel para chamar o método 'render')
+ * Ex: function App () { return <Main /> }
+ */
 
+/* Propriedade - Uma informação que se passa para um Component
+ * Ex: id="box-container" <-Isso permite manipular o conteúdo
+ */
+ import React from 'react';
+import "./App.css";
+
+import Router from './routes';
+
+const App = () => <Router />;
+
+// Stateless
+//function App() {
+//  return <Main /> 
+//}
+
+/*class App extends Component {
+ * render() {
+ *  return <Main />;       <-Statefull
+ * }
+ *}
+ */
 export default App;
