@@ -6,14 +6,14 @@ import "./styles.css";
 
 export default class Main extends Component {
 /* O State é onde guarda/manipula todas
- *informações alteradas do render
+ * informações alteradas do render
  */
     state = {
     newBox: ""
   };
   
     handleSubmit = async e => {
-        e.preventDefault();/* Para evitar reload
+        e.preventDefault();/* Evita reload
                             * da página
                             */
         
